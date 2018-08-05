@@ -1,28 +1,15 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <router-view/>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+  // CoreUI Icons Set
+  @import '~@coreui/icons/css/coreui-icons.min.css';
+  /* Import Simple Line Icons Set */
+  $simple-line-font-path: '~simple-line-icons/fonts/';
+  @import '~simple-line-icons/scss/simple-line-icons.scss';
+  /* Import Bootstrap Vue Styles */
+  @import '~bootstrap-vue/dist/bootstrap-vue.css';
+  // Import Main styles for this application
+  @import 'assets/scss/style';
 </style>
