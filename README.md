@@ -1,4 +1,4 @@
-# study01
+# vue admin
 
 ## Project setup
 ```
