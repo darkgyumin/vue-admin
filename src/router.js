@@ -12,7 +12,11 @@ export default new Router({
       name: 'Home',
       component: () => import('./containers/DefaultContainer'),
       children: [
-
+        {
+          path: 'dashboard',
+          name: 'Dashboard',
+          component: () => import('./views/Dashboard')
+        }
       ]
     },
     {
